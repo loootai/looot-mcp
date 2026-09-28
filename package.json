@@ -1,0 +1,40 @@
+{
+  "name": "looot-mcp",
+  "version": "0.1.0",
+  "description": "stdio bridge to the looot MCP server: discover, inspect and run data provider operations from any MCP client.",
+  "mcpName": "ai.looot/looot",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "looot-mcp": "bin/looot-mcp.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "server.json",
+    "llms-install.md"
+  ],
+  "scripts": {
+    "test": "node --test test/bridge.test.js",
+    "test:live": "node --test test/live.test.js",
+    "scan": "bash scripts/leak-scan.sh .",
+    "ci": "npm run scan && npm test"
+  },
+  "dependencies": {
+    "mcp-remote": "0.14.3"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "mcp",
+    "model context protocol",
+    "looot",
+    "agents",
+    "enrichment",
+    "seo",
+    "web data"
+  ],
+  "homepage": "https://looot.ai",
+  "license": "SEE LICENSE IN LICENSE"
+}

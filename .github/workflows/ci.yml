@@ -1,0 +1,25 @@
+# CI for looot-mcp. Not enabled: GitHub Actions stay off until the owner turns them on.
+# Once on, switch the trigger to push and pull_request.
+name: ci
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [20, 22, 24]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+      - run: npm ci --ignore-scripts
+      - run: bash scripts/leak-scan.sh .
+      - run: npm test
+      - run: npm run test:live
