@@ -21,7 +21,8 @@ looot runs a hosted MCP server. Do not clone or build anything.
 | Codex | `codex mcp add looot --url https://api.looot.ai/mcp` then `codex mcp login looot` |
 | Gemini CLI | `gemini mcp add --transport http looot https://api.looot.ai/mcp` |
 | Windsurf | `~/.codeium/windsurf/mcp_config.json`: `{"mcpServers":{"looot":{"serverUrl":"https://api.looot.ai/mcp"}}}` |
-| Cline, other stdio clients | `{"command":"npx","args":["-y","mcp-remote@0.14.3","https://api.looot.ai/mcp","--transport","http-only"]}` |
+| Cline | `cline_mcp_settings.json`: `{"mcpServers":{"looot":{"type":"streamableHttp","url":"https://api.looot.ai/mcp","disabled":false}}}` then run Authorize OAuth for `looot` |
+| Other stdio-only clients | `{"command":"npx","args":["-y","mcp-remote@0.14.3","https://api.looot.ai/mcp","--transport","http-only"]}` |
 
 Merge into an existing config file. Never overwrite other servers the user already has.
 

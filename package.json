@@ -12,7 +12,10 @@
     "bin",
     "src",
     "server.json",
-    "llms-install.md"
+    "llms-install.md",
+    "gemini-extension.json",
+    "GEMINI.md",
+    "LICENSE"
   ],
   "scripts": {
     "test": "node --test test/bridge.test.js",
@@ -36,5 +39,9 @@
     "web data"
   ],
   "homepage": "https://looot.ai",
-  "license": "SEE LICENSE IN LICENSE"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loootai/looot-mcp.git"
+  }
 }

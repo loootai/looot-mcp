@@ -16,9 +16,11 @@ directly and sign in with the browser. This repo adds two things:
 - `looot-mcp`, a small npm bin that bridges stdio to the hosted server, for clients that only
   speak stdio. It runs a pinned `mcp-remote` (0.14.3) and adds nothing else.
 - `server.json`, the MCP Registry entry (`ai.looot/looot`), remote first.
+- `gemini-extension.json` and `GEMINI.md`, the Gemini CLI extension (remote server plus the looot skill as context).
+- `llms-install.md`, setup steps an AI agent such as Cline can follow on its own.
 
-> Status: private and unpublished. `looot-mcp` is not on npm yet, so the `npx looot-mcp` lines
-> below work only after a release. Every "remote" setup works today.
+> `looot-mcp` is not on npm yet, so the `npx looot-mcp` lines below work only after a release.
+> Every remote setup works today.
 
 ## Install
 
@@ -83,6 +85,14 @@ url = "https://api.looot.ai/mcp"
 ```
 
 ### Gemini CLI
+
+As an extension (adds the server and the looot usage guide):
+
+```bash
+gemini extensions install https://github.com/loootai/looot-mcp
+```
+
+Or only the server:
 
 ```bash
 gemini mcp add --transport http looot https://api.looot.ai/mcp
@@ -207,4 +217,4 @@ git config core.hooksPath .githooks
 
 ## License
 
-Proprietary, all rights reserved. See [LICENSE](LICENSE).
+MIT, see [LICENSE](LICENSE). The hosted looot service has its own terms: https://looot.ai/terms
