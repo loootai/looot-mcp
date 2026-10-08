@@ -10,6 +10,14 @@ looot is one gateway to about 2,500 data provider operations: email find and ver
 enrichment, SEO and SERP data, social profiles, web scraping and more. One token, one prepaid
 balance, one run contract.
 
+## Install for agents
+
+```bash
+claude mcp add --transport http looot https://api.looot.ai/mcp
+```
+
+See also: [awesome-looot-use-cases](https://github.com/loootai/awesome-looot-use-cases) (copy-paste recipes) and [awesome-gtm](https://github.com/loootai/awesome-gtm) (open-source GTM tools).
+
 The server is hosted at `https://api.looot.ai/mcp` (streamable HTTP). Most clients connect to it
 directly and sign in with the browser. This repo adds two things:
 
