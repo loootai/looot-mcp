@@ -1,4 +1,8 @@
+<p align="center"><img src="assets/hero.png" alt="looot-mcp: One MCP server for 2,500+ data APIs" width="100%"></p>
+
 # looot MCP
+
+[![License](https://img.shields.io/github/license/loootai/looot-mcp)](LICENSE) [![Docs](https://img.shields.io/badge/docs-docs.looot.ai-12A06A)](https://docs.looot.ai)
 
 <p>
   <a href="https://cursor.com/en/install-mcp?name=looot&config=eyJ1cmwiOiJodHRwczovL2FwaS5sb29vdC5haS9tY3AifQ=="><img src="https://img.shields.io/badge/Install_in_Cursor-000000?style=for-the-badge&logo=cursor&logoColor=white" alt="Install in Cursor" /></a>
