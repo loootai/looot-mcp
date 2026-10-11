@@ -3,7 +3,7 @@
   "name": "ai.looot/looot",
   "title": "looot",
   "description": "Search, price and run 2,500+ data endpoints from 90+ providers with one key and one prepaid balance.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "websiteUrl": "https://looot.ai",
   "repository": {
     "url": "https://github.com/loootai/looot-mcp",

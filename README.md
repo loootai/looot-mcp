@@ -147,7 +147,7 @@ In `~/.codeium/windsurf/mcp_config.json`:
 ```json
 {
   "mcpServers": {
-    "looot": { "command": "npx", "args": ["-y", "looot-mcp@0.1.0"] }
+    "looot": { "command": "npx", "args": ["-y", "looot-mcp@1.0.2"] }
   }
 }
 ```

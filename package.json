@@ -1,6 +1,6 @@
 {
   "name": "looot-mcp",
-  "version": "0.1.0",
+  "version": "1.0.2",
   "description": "stdio bridge to the looot MCP server: discover, inspect and run data provider operations from any MCP client.",
   "mcpName": "ai.looot/looot",
   "private": true,
