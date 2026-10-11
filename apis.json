@@ -1,0 +1,62 @@
+{
+  "aid": "looot:looot",
+  "name": "looot",
+  "description": "One account and one prepaid balance for about 2,500 data API endpoints from 90+ providers: work email and phone lookup, company and people enrichment, Google results, web pages, news, SEO data. Agents search the catalog, see the price, then run the call. Available as a remote MCP server, a REST API, a CLI and agent skills.",
+  "url": "https://raw.githubusercontent.com/loootai/looot-mcp/main/apis.json",
+  "image": "https://raw.githubusercontent.com/loootai/looot-plugin/main/plugins/claude-code/looot/.claude-plugin/icon.png",
+  "type": "Index",
+  "kind": "company",
+  "position": "Producing",
+  "access": "1st-Party",
+  "specificationVersion": "0.23",
+  "created": "2026-10-11",
+  "modified": "2026-10-11",
+  "tags": ["Data", "Enrichment", "Search", "MCP", "Agents"],
+  "apis": [
+    {
+      "aid": "looot:looot-gateway-api",
+      "name": "looot gateway API",
+      "description": "REST API to search the endpoint catalog, inspect an endpoint and its price, run it, and poll the run. Bearer token auth. The public catalog is readable without a token.",
+      "image": "https://raw.githubusercontent.com/loootai/looot-plugin/main/plugins/claude-code/looot/.claude-plugin/icon.png",
+      "baseURL": "https://api.looot.ai",
+      "humanURL": "https://looot.ai",
+      "tags": ["Data", "Enrichment", "Email", "SERP", "Web Scraping"],
+      "properties": [
+        { "type": "Documentation", "url": "https://docs.looot.ai" },
+        { "type": "Pricing", "url": "https://looot.ai/pricing" },
+        { "type": "TermsOfService", "url": "https://looot.ai/terms" },
+        { "type": "PrivacyPolicy", "url": "https://looot.ai/privacy" },
+        { "type": "Support", "url": "https://looot.ai/contact" },
+        { "type": "LLMsTxt", "url": "https://looot.ai/llms.txt" },
+        { "type": "CLI", "url": "https://www.npmjs.com/package/looot" },
+        { "type": "SDKs", "url": "https://github.com/loootai/looot-js" },
+        { "type": "GitHubOrg", "url": "https://github.com/loootai" }
+      ]
+    },
+    {
+      "aid": "looot:looot-mcp-server",
+      "name": "looot MCP server",
+      "description": "Remote MCP server (streamable HTTP) with OAuth 2.1 sign-in in the browser. Tools to discover endpoints, inspect prices and run them from any MCP client.",
+      "image": "https://raw.githubusercontent.com/loootai/looot-plugin/main/plugins/claude-code/looot/.claude-plugin/icon.png",
+      "baseURL": "https://api.looot.ai/mcp",
+      "humanURL": "https://looot.ai",
+      "tags": ["MCP", "Agents"],
+      "properties": [
+        { "type": "MCPServer", "url": "https://api.looot.ai/mcp" },
+        { "type": "Documentation", "url": "https://docs.looot.ai" },
+        { "type": "GitHubRepo", "url": "https://github.com/loootai/looot-mcp" },
+        { "type": "AgentSkills", "url": "https://github.com/loootai/looot-skills" },
+        { "type": "GettingStarted", "url": "https://looot.ai/agents.md" }
+      ]
+    }
+  ],
+  "maintainers": [
+    {
+      "FN": "looot",
+      "organizationName": "looot",
+      "email": "support@looot.ai",
+      "url": "https://looot.ai",
+      "X-github": "loootai"
+    }
+  ]
+}
