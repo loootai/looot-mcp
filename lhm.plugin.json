@@ -1,0 +1,12 @@
+{
+  "author": "looot",
+  "authorUrl": "https://github.com/loootai",
+  "cloudEndpoint": "https://api.looot.ai/mcp",
+  "description": "One key and a prepaid balance for 2,500+ data API endpoints from 90+ providers: enrichment, email finding, SERP and SEO, scraping, social, ads, reviews. Search free, see the price before each run, pay per call.",
+  "homepage": "https://looot.ai",
+  "icon": "https://looot.ai/icon.svg",
+  "identifier": "loootai-looot-mcp",
+  "name": "looot",
+  "tags": ["data-api", "enrichment", "email-finder", "seo", "serp", "scraping", "social", "ads", "reviews", "oauth"],
+  "version": "1.0.1"
+}
