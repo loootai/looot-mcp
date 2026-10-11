@@ -2,6 +2,11 @@
 
 All notable changes to this package. Versions follow semver.
 
+## 1.0.3
+
+- lhm.plugin.json lists the four server prompts: find-work-email, enrich-company, price-check, request-missing-provider.
+- Version bump only in the manifests. The npm bridge is unchanged.
+
 ## 1.0.2
 
 - Version alignment: package.json, gemini-extension.json, server.json and lhm.plugin.json all say 1.0.2.

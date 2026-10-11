@@ -19,7 +19,7 @@
     "reviews",
     "oauth"
   ],
-  "version": "1.0.2",
+  "version": "1.0.3",
   "tools": [
     {
       "name": "discover",
@@ -750,5 +750,56 @@
       "mimeType": "text/html;profile=mcp-app"
     }
   ],
-  "category": "tools"
+  "category": "tools",
+  "prompts": [
+    {
+      "name": "find-work-email",
+      "description": "Find one person's work email from their name and company domain, showing the price before any paid run.",
+      "arguments": [
+        {
+          "name": "name",
+          "description": "The person's full name",
+          "required": true
+        },
+        {
+          "name": "domain",
+          "description": "Their company's domain, for example example.com",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "enrich-company",
+      "description": "Look up a company from its domain (size, industry, location, links), showing the price before any paid run.",
+      "arguments": [
+        {
+          "name": "domain",
+          "description": "The company's domain, for example example.com",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "price-check",
+      "description": "Find what a task would cost on looot (providers, price, most it can cost) without spending anything.",
+      "arguments": [
+        {
+          "name": "task",
+          "description": "The task in plain words, for example verify 500 emails",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "request-missing-provider",
+      "description": "Check that looot really has no endpoint for a need, then file a capability request for it.",
+      "arguments": [
+        {
+          "name": "need",
+          "description": "What you need, in plain words",
+          "required": true
+        }
+      ]
+    }
+  ]
 }

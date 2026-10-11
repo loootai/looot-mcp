@@ -1,6 +1,6 @@
 {
   "name": "looot",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Find, price and run 2,500+ data provider operations (email, enrichment, SEO, social, web) from one account. Browser sign-in, pay per call.",
   "mcpServers": {
     "looot": {
