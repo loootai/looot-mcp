@@ -8,6 +8,7 @@
   <a href="https://cursor.com/en/install-mcp?name=looot&config=eyJ1cmwiOiJodHRwczovL2FwaS5sb29vdC5haS9tY3AifQ=="><img src="https://img.shields.io/badge/Install_in_Cursor-000000?style=for-the-badge&logo=cursor&logoColor=white" alt="Install in Cursor" /></a>
   <a href="https://vscode.dev/redirect/mcp/install?name=looot&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fapi.looot.ai%2Fmcp%22%7D"><img src="https://img.shields.io/badge/Install_in_VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="Install in VS Code" /></a>
   <a href="https://insiders.vscode.dev/redirect/mcp/install?name=looot&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fapi.looot.ai%2Fmcp%22%7D&quality=insiders"><img src="https://img.shields.io/badge/VS_Code_Insiders-24bfa5?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="Install in VS Code Insiders" /></a>
+  <a href="https://replit.com/integrations?mcp=eyJkaXNwbGF5TmFtZSI6Imxvb290IiwiYmFzZVVybCI6Imh0dHBzOi8vYXBpLmxvb290LmFpL21jcCJ9"><img src="https://replit.com/badge?caption=Add%20to%20Replit" alt="Add to Replit" height="40" /></a>
 </p>
 
 looot is one gateway to about 2,500 data provider operations: email find and verify, company
