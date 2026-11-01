@@ -1,4 +1,4 @@
-<p align="center"><img src="assets/hero.png" alt="looot-mcp: One MCP server for 2,500+ data APIs" width="100%"></p>
+<p align="center"><img src="assets/hero.png" alt="looot-mcp: One MCP server for 4,200+ data APIs" width="100%"></p>
 
 # looot MCP
 
@@ -11,7 +11,7 @@
   <a href="https://replit.com/integrations?mcp=eyJkaXNwbGF5TmFtZSI6Imxvb290IiwiYmFzZVVybCI6Imh0dHBzOi8vYXBpLmxvb290LmFpL21jcCJ9"><img src="https://replit.com/badge?caption=Add%20to%20Replit" alt="Add to Replit" height="40" /></a>
 </p>
 
-looot is one gateway to about 2,500 data provider operations: email find and verify, company
+looot is one gateway to 4,200+ data provider operations: email find and verify, company
 enrichment, SEO and SERP data, social profiles, web scraping and more. One token, one prepaid
 balance, one run contract.
 
@@ -223,7 +223,7 @@ git config core.hooksPath .githooks
 
 - Website: https://looot.ai
 - Agent guide: https://api.looot.ai/llms.txt (full: https://api.looot.ai/llms-full.txt)
-- OpenAPI: https://api.looot.ai/openapi.json
+- API reference: https://docs.looot.ai/reference
 - MCP descriptor: https://api.looot.ai/.well-known/mcp.json
 - Per-client pages: https://looot.ai/agents.md
 - Install guide for agents: [llms-install.md](llms-install.md)

@@ -1,7 +1,7 @@
 {
   "aid": "looot:looot",
   "name": "looot",
-  "description": "One account and one prepaid balance for about 2,500 data API endpoints from 90+ providers: work email and phone lookup, company and people enrichment, Google results, web pages, news, SEO data. Agents search the catalog, see the price, then run the call. Available as a remote MCP server, a REST API, a CLI and agent skills.",
+  "description": "One account and one prepaid balance for 4,200+ data API endpoints from 300+ providers: work email and phone lookup, company and people enrichment, Google results, web pages, news, SEO data. Agents search the catalog, see the price, then run the call. Available as a remote MCP server, a REST API, a CLI and agent skills.",
   "url": "https://raw.githubusercontent.com/loootai/looot-mcp/main/apis.json",
   "image": "https://raw.githubusercontent.com/loootai/looot-plugin/main/plugins/claude-code/looot/.claude-plugin/icon.png",
   "type": "Index",
