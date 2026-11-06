@@ -65,6 +65,8 @@ Click the Install in Cursor button above, or add this to `~/.cursor/mcp.json`:
 }
 ```
 
+Also listed on [cursor.directory](https://cursor.directory/plugins/looot).
+
 ### VS Code
 
 Click the Install in VS Code button above, or run:
