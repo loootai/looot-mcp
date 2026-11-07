@@ -1,0 +1,21 @@
+# Smithery config. Runs the same pinned mcp-remote line as the README, pointed at the
+# hosted looot MCP server (https://api.looot.ai/mcp, streamable HTTP).
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      loootToken:
+        type: string
+        description: Optional looot agent token (cs_ms_...). Without it, mcp-remote opens the browser sign-in on first use.
+  commandFunction: |-
+    (config) => {
+      const args = ['-y', 'mcp-remote@0.14.3', 'https://api.looot.ai/mcp', '--transport', 'http-only'];
+      if (!config.loootToken) return { command: 'npx', args };
+      return {
+        command: 'npx',
+        args: args.concat(['--header', 'Authorization:Bearer ${LOOOT_TOKEN}']),
+        env: { LOOOT_TOKEN: config.loootToken }
+      };
+    }
+  exampleConfig: {}
