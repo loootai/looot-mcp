@@ -41,7 +41,7 @@ mcp-remote 0.14.3 passed with one warning: a single maintainer.
 ## Public looot surface this repo may use
 
 - `https://api.looot.ai/mcp` and `https://api.looot.ai/.well-known/*`
-- `https://api.looot.ai/llms.txt`, `/llms-full.txt`, `/openapi.json`, `/skill.md`
+- `https://api.looot.ai/llms.txt`, `/llms-full.txt`, `/skill.md`
 - `https://looot.ai/docs`, `https://looot.ai/agents/*.md`
 
 ## Never

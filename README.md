@@ -11,26 +11,76 @@
   <a href="https://replit.com/integrations?mcp=eyJkaXNwbGF5TmFtZSI6Imxvb290IiwiYmFzZVVybCI6Imh0dHBzOi8vYXBpLmxvb290LmFpL21jcCJ9"><img src="https://replit.com/badge?caption=Add%20to%20Replit" alt="Add to Replit" height="40" /></a>
 </p>
 
-looot is one gateway to 4,200+ data provider operations: email find and verify, company
-enrichment, SEO and SERP data, social profiles, web scraping and more. One token, one prepaid
-balance, one run contract.
+The looot MCP server lets any MCP client find emails, enrich companies, pull Google results and
+more: 4,200+ data API operations from 300+ providers on one prepaid balance. It is hosted at
+`https://api.looot.ai/mcp` (streamable HTTP) and you sign in with the browser, so no key goes in
+any file.
 
-## Install for agents
+## Quickstart
 
-```bash
-claude mcp add --transport http looot https://api.looot.ai/mcp
+1. Add the server. In Claude Code:
+
+   ```bash
+   claude mcp add --transport http looot https://api.looot.ai/mcp
+   ```
+
+   Cursor, VS Code, Codex, Gemini CLI and the rest are under [Install](#install).
+
+2. Run `/mcp`, pick `looot` and choose Authenticate. A browser window opens for sign-in.
+
+3. Ask for a job in plain words, as in the example below.
+
+## Example
+
+Ask your agent:
+
+```text
+Use looot to find the work email of Patrick Collison at stripe.com
 ```
 
-See also: [awesome-looot-use-cases](https://github.com/loootai/awesome-looot-use-cases) (copy-paste recipes) and [awesome-gtm](https://github.com/loootai/awesome-gtm) (open-source GTM tools).
+It calls `search` first, which is free. This is the real answer from 2026-11-09, trimmed:
 
-The server is hosted at `https://api.looot.ai/mcp` (streamable HTTP). Most clients connect to it
-directly and sign in with the browser. This repo adds two things:
+```text
+job people.email.find, 29 endpoints
+kittai-find-email           Kitt AI        $0.005 per call   works 54% of 12,023 runs, median 4.0 s
+companyenrich-people-email  CompanyEnrich  $0.098 per call   no runs yet
+fundable-person-email       Fundable       $0.25 per call    no runs yet
+```
+
+Then it runs `job:people.email.find` with fallback. looot tries the next provider on a miss and the
+result carries the email and the price charged.
+
+## Free to try
+
+Search and inspect are free and need no balance. Paid runs are billed per call at the price
+`inspect` shows first, and a failed call costs nothing. A new workspace starts at $0; top up from $5
+when you want the first paid result.
+
+## Where it's listed
+
+[![ClawHub](https://img.shields.io/badge/ClawHub-walidboulanouar%2Flooot-12A06A)](https://clawhub.ai/walidboulanouar/looot)
+[![skills.sh](https://img.shields.io/badge/skills.sh-loootai%2Flooot--skills-12A06A)](https://skills.sh/loootai/looot-skills)
+[![npm pi-looot](https://img.shields.io/npm/v/pi-looot?label=npm%20pi-looot)](https://www.npmjs.com/package/pi-looot)
+[![MCP Registry](https://img.shields.io/badge/MCP_Registry-ai.looot%2Flooot-12A06A)](https://registry.modelcontextprotocol.io/v0/servers?search=ai.looot/looot)
+[![Glama](https://img.shields.io/badge/Glama-looot-12A06A)](https://glama.ai/mcp/connectors/ai.looot/looot)
+[![LobeHub](https://img.shields.io/badge/LobeHub-looot-12A06A)](https://lobehub.com/mcp/loootai-looot-mcp)
+[![Appside](https://img.shields.io/badge/Appside-looot-12A06A)](https://mcp.appside.build/mcp-servers/looot/)
+[![Dify](https://img.shields.io/badge/Dify_Marketplace-looot-12A06A)](https://marketplace.dify.ai/plugins/looot/looot)
+[![VS Code Marketplace](https://img.shields.io/badge/VS_Code_Marketplace-looot.looot-007ACC)](https://marketplace.visualstudio.com/items?itemName=looot.looot)
+
+Also on [cursor.directory](https://cursor.directory/plugins/looot).
+
+## What is in this repo
+
+Most clients connect to the hosted server directly. This repo adds:
 
 - `looot-mcp`, a small npm bin that bridges stdio to the hosted server, for clients that only
   speak stdio. It runs a pinned `mcp-remote` (0.14.3) and adds nothing else.
 - `server.json`, the MCP Registry entry (`ai.looot/looot`), remote first.
 - `gemini-extension.json` and `GEMINI.md`, the Gemini CLI extension (remote server plus the looot skill as context).
 - `llms-install.md`, setup steps an AI agent such as Cline can follow on its own.
+
+See also: [awesome-looot-use-cases](https://github.com/loootai/awesome-looot-use-cases) (copy-paste recipes) and [awesome-gtm](https://github.com/loootai/awesome-gtm) (open-source GTM tools).
 
 > `looot-mcp` is not on npm yet, so the `npx looot-mcp` lines below work only after a release.
 > Every remote setup works today.
